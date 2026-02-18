@@ -11,13 +11,11 @@ Built an LLM-powered system to convert questionnaires into structured XML format
 
 ### XML LLM
 
+### Output - 1
 <img width="922" height="657" alt="image" src="https://github.com/user-attachments/assets/871a8f7d-6a9c-4e35-88ac-4603adde7327" />
 
+### Output - 2
 <img width="927" height="712" alt="image" src="https://github.com/user-attachments/assets/edc25e4f-562f-4c77-92b1-d556c965aa95" />
 
-
-<img width="931" height="784" alt="image" src="https://github.com/user-attachments/assets/8db3c565-5a6e-40d3-983d-a8bb42209115" />
-
-<img width="454" height="704" alt="image" src="https://github.com/user-attachments/assets/b5b96fd6-76f8-41e5-9172-51d04cc04588" />
 
 
