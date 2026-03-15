@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gokul's AI XML App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 20px;
+            color: #4fc3f7;
+        }
+
+        form {
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            width: 700px; /* wider form */
+            margin: 30px auto;
+            box-shadow: 0 0 15px rgba(79, 195, 247, 0.5);
+        }
+
+        label {
+            font-weight: bold;
+            color: #81d4fa;
+        }
+
+        textarea, select {
+            width: 90%;
+            padding: 12px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+            background: #1c1c1c;
+            color: #f0f0f0;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 150px; /* bigger input box */
+            resize: vertical; /* allow resizing */
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(90deg, #1565c0, #0d47a1);
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: linear-gradient(90deg, #0d47a1, #1565c0);
+        }
+
+        .output {
+            background: #0d0d0d;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(79, 195, 247, 0.4);
+        }
+
+        pre {
+            background: #1c1c1c;
+            color: #4fc3f7;
+            padding: 15px;
+            border-radius: 8px;
+            overflow-x: auto;
+            font-family: "Courier New", monospace;
+        }
+    </style>
+</head>
+<body>
+    <h2>Gokul's AI XML App</h2>
+    <form method="POST">
+        <label>Enter Input:</label><br>
+        <textarea name="user_input" required></textarea><br><br>
+
+        <label>Select Mode:</label><br>
+        <select name="mode">
+            <option value="RAG">RAG</option>
+            <option value="XML">XML Generator</option>
+        </select><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if output %}
+        <div class="output">
+            <h3>Output:</h3>
+            <pre>{{ output }}</pre>
+        </div>
+    {% endif %}
+</body>
+</html>
